@@ -42,9 +42,14 @@ function sum (x,y){
             console.log('Complimenti! La somma è dispari! Hai vinto!')
         }
     }
-    else {
-        console.log('Mi dispiace, la somma è dispari, hai perso')
+    else if (somma % 2 != 0){
+        if (pariDispari.toLowerCaseWord === 'dispari'){
+            console.log('Complimenti! La somma è dispari! Hai vinto!')
     }
+    else {
+        console.log('Mi dispiace, la somma è pari! Hai perso')
+    }
+}
 }
 
 // attivo la funzione
