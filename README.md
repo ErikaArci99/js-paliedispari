@@ -23,3 +23,7 @@ ESERCIZIO 1
 -creiamo la funzione che "reversa" la parola inserita
 -creiamo la condizione che verifica se la parola al contrario è uguale
 -attiviamo la funzione
+
+ESERCIZIO 2
+-permetto all`utente di scegliere tra pari e dispari
+-creo la funzione che genera al pc un numero random
