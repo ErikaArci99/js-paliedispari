@@ -19,12 +19,33 @@ rWord(word);
 
 // esercizio 2
 
+// variabili utente
 let pariDispari = prompt('Scegli tra pari e dispari e digitalo qui');
 let numeroUtente = prompt ('Sceglli un numero da 1 a 5');
 
+// funzione numero random pc
 function numberPc (min,max){
-    return Math.floor(math.random()*(max - min + 1) + min);
+    return Math.floor(Math.random()*(max - min + 1) + min)
 }
 
+// attivazione della funzione
 let numeroComputer = numberPc(1,5);
 
+// funzione somma delle variabili
+function sum (x,y){
+    let somma = x + y 
+    if (somma % 2 == 0){
+        if (pariDispari.toLowerCaseWord === 'pari'){
+            console.log('Complimenti! La somma è pari! Hai vinto!')
+        }
+        if (pariDispari.toLowerCaseWord === 'dispari'){
+            console.log('Complimenti! La somma è dispari! Hai vinto!')
+        }
+    }
+    else {
+        console.log('Mi dispiace, la somma è dispari, hai perso')
+    }
+}
+
+// attivo la funzione
+sum(numeroUtente, numeroComputer);

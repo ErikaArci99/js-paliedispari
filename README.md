@@ -27,3 +27,6 @@ ESERCIZIO 1
 ESERCIZIO 2
 -permetto all`utente di scegliere tra pari e dispari
 -creo la funzione che genera al pc un numero random
+-attivo la funzione del numero pc
+-creo la funziona che somma le variabili  
+-attivo la funzione con i valori 
