@@ -12,3 +12,6 @@ function rWord (string){
         console.log('Questa parola non è palindroma');
     }
 }
+
+// attivamento della funzione
+rWord(word);
