@@ -17,3 +17,9 @@ Ho bisogno di parametri?
 Devo restituire un valore?
 Se sì, di che tipo?
 Buon lavoro e buon divertimento!
+
+ESERCIZIO 1
+-permettere all`utente di insierire una parola
+-creiamo la funzione che "reversa" la parola inserita
+-creiamo la condizione che verifica se la parola al contrario è uguale
+-attiviamo la funzione
