@@ -34,10 +34,10 @@ console.log(numeroComputer + ' '+ 'Numero computer')
 console.log(numeroUtente + ' '+ 'Numero utente')
 
 // funzione somma delle variabili
-function sum(x, y) {
+function sum(x, y, string) {
     let somma = x + y
     if (somma % 2 == 0) {
-        if (pariDispari === 'pari') {
+        if (string === 'pari') {
             console.log('Complimenti! La somma è pari! Hai vinto!')
         }
         else {
@@ -45,7 +45,7 @@ function sum(x, y) {
         }
     }
     else if (somma % 2 != 0) {
-        if (pariDispari === 'dispari') {
+        if (string === 'dispari') {
             console.log('Complimenti! La somma è dispari! Hai vinto!')
         }
         else {
@@ -55,4 +55,4 @@ function sum(x, y) {
     }
 
 // attivo la funzione
-sum(numeroUtente, numeroComputer);
+sum(numeroUtente, numeroComputer, pariDispari);
