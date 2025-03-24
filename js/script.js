@@ -3,7 +3,7 @@
 let word = prompt('Inserisci la parola da testare')
 
 // funzione per capovolgere la parola
-function rWord (string){
+function rWord(string) {
     let toLowerCaseWord = string.toLowerCase();
     let reverseWord = toLowerCaseWord.split('').reverse().join('');
     if (toLowerCaseWord === reverseWord) {
@@ -21,36 +21,38 @@ rWord(word);
 
 // variabili utente
 let pariDispari = prompt('Scegli tra pari e dispari e digitalo qui');
-let numeroUtente = prompt ('Sceglli un numero da 1 a 5');
+let numeroUtente = prompt('Sceglli un numero da 1 a 5');
 
 // funzione numero random pc
-function numberPc (min,max){
-    return Math.floor(Math.random()*(max - min + 1) + min)
+function numberPc(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 // attivazione della funzione
-let numeroComputer = numberPc(1,5);
+let numeroComputer = numberPc(1, 5);
+console.log(numeroComputer + ' '+ 'Numero computer')
+console.log(numeroUtente + ' '+ 'Numero utente')
 
 // funzione somma delle variabili
-function sum (x,y){
-    let somma = x + y 
-    if (somma % 2 == 0){
-        if (pariDispari.toLowerCaseWord === 'pari'){
+function sum(x, y) {
+    let somma = x + y
+    if (somma % 2 == 0) {
+        if (pariDispari === 'pari') {
             console.log('Complimenti! La somma è pari! Hai vinto!')
         }
-        if (pariDispari.toLowerCaseWord === 'dispari'){
-            console.log('Complimenti! La somma è dispari! Hai vinto!')
+        else {
+            console.log('Mi dispiace, la somma è pari, hai perso.')
         }
     }
-    else if (somma % 2 != 0){
-        if (pariDispari.toLowerCaseWord === 'dispari'){
+    else if (somma % 2 != 0) {
+        if (pariDispari === 'dispari') {
             console.log('Complimenti! La somma è dispari! Hai vinto!')
+        }
+        else {
+            console.log('Mi dispiace, la somma è dispari, hai perso.')
+        }
+        }
     }
-    else {
-        console.log('Mi dispiace, la somma è pari! Hai perso')
-    }
-}
-}
 
 // attivo la funzione
 sum(numeroUtente, numeroComputer);
